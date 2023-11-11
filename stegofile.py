@@ -2,7 +2,7 @@ import cv2
 import os
 import string
 
-print("Welcome to Image-based Steganography with Python")
+print("Welcome to Image-based Steganography with Python - Abhijeet Chauhan")
 
 img = cv2.imread("tree.jpg")
 
