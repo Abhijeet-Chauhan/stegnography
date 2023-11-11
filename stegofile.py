@@ -2,9 +2,11 @@ import cv2
 import os
 import string
 
+print("Welcome to Image-based Steganography with Python")
+
 img = cv2.imread("tree.jpg")
 
-msg = input("Enter secert message: ")
+msg = input("Enter secert message you want to hide: ")
 
 password = input("Enter password: ")
 
@@ -36,7 +38,7 @@ n=0
 m=0
 z=0
 
-pas = input("Enter passcode for Decryption: ")
+pas = input("Enter passcode for Decryption and see the message: ")
 
 if password == pas:
     for i in range(len(msg)):
@@ -46,4 +48,4 @@ if password == pas:
         z=(z+1) % 3
     print("Decryption message",message)
 else:
-    print("Not valid key")
+    print("Invalid password")
